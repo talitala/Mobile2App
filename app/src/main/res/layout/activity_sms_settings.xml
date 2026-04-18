@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS Notifications"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable SMS notifications to receive alerts for upcoming events or low inventory."
+        android:layout_marginBottom="24dp" />
+
+    <Switch
+        android:id="@+id/sms_permission_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive SMS Alerts"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/permission_status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Permission not yet granted. Toggling the switch will request permission."
+        android:textColor="@android:color/darker_gray"
+        android:fontStyle="italic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard" />
+
+</LinearLayout>
